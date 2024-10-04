@@ -9,163 +9,190 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title>Mi Portafolio</title>
+    <title>JMIDev</title>
 </head>
 
 <body>
     <!-- Menú -->
-    <header class="cabecera">
-        <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
-        <h1 class="cabecera__titulo">Alura Latam</h1>
-        <nav class="navegacion">
+    <header class="cabecera" role="banner">
+        <a href="#inicio"><img class="cabecera__logo" src="assets/logo.webp" alt="Logo de JMIDev"></a>
+        <nav class="navegacion" role="navigation" aria-label="Navegación principal">
             <ul class="navegacion__lista">
-                <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
-                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
-                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
-                <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
-                <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
-                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
+                <li class="navegacion__elemento"><button href="#sobre-mi" aria-label="Ir a la sección Sobre mí">Sobre mí</button></li>
+                <li class="navegacion__elemento"><button href="#habilidades">Habilidades</button></li>
+                <li class="navegacion__elemento"><button href="#aficiones">Aficiones</button></li>
+                <li class="navegacion__elemento"><button href="#formacion">Formación</button></li>
+                <li class="navegacion__elemento"><button href="#proyectos">Proyectos</button></li>
+                <li class="navegacion__elemento"><button href="#contacto">Contacto</button></li>
             </ul>
         </nav>
     </header>
 
     <!-- Sección de Presentación -->
-    <section class="presentacion">
-        <img class="presentacion__foto" src="assets/profile.png" alt="Foto de perfil">
-        <div class="presentacion__contenedor">
-            <h2 class="presentacion__titulo">Hola, mi nombre es Alura Latam y construyo páginas web</h2>
-            <p class="presentacion__subtitulo">Soy formada en... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p>
-            <ul class="redes">
-                <li class="redes__img"><a href="">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
+    <main id="inicio">
+        <section class="presentacion" aria-labelledby="presentacion-titulo">
+            <div class="presentacion__contenedor">
+                <h1 id="presentacion-titulo" class="presentacion__titulo">Hola, mi nombre es Juan Manuel Impellizziere. <br> Soy</h1>
+                <h1 class="intro-subtitle"></h1>
+                <ul class="redes">
+                    <li class="redes__img"><a href="">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
+                    <li class="redes__img"><a href="">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
+                    <li class="redes__img"><a href="">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
+                    <li class="redes__img"><a href="">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección sobre mí -->
+        <section class="sobre-mi" id="sobre-mi">
+            <div class="sobre-mi__contenedor">
+                <div class="sobre-mi__texto-contenedor">
+                    <h2 class="sobre-mi__titulo">Sobre mí</h2>
+                    <p class="sobre-mi__texto">Mi nombre es Juan Manuel Impellizziere y soy programador full-stack. He completado los cursos de Introducción a la programación y Full Stack de Python en Codo a Codo. Actualmente me encuentro formandome en one, relizando el curso de frontend.</p>
+                    <p class="sobre-mi__texto">n mi tiempo libre, disfruto practicando escalada deportiva, natación y padel. También me gusta viajar y conocer nuevas culturas. Me apasiona aprender nuevas tecnologias, nuevos lenguajes y el mundo de la programación. Aunque no tengo experiencia laboral, he trabajado en varios proyectos y me encantan los desafíos, poder crear soluciones.</p>
+                    <!-- Firma opcional -->
+                    <img class="sobre-mi__firma" src="assets/signature.png" alt="Firma">
+                </div>
+                <div class="sobre-mi__imagen-contenedor">
+                    <img class="sobre-mi__imagen" src="assets/IMG_20200210_082849.png" alt="Mi foto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Habilidades -->
+        <section class="habilidades" id="habilidades">
+            <h2 class="habilidades__titulo">Habilidades</h2>
+            <ul class="habilidades__lista">
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icono" src="assets/html5-brands-solid.svg" alt="HTML">
+                    <p class="habilidades__nombre">HTML 5</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icono" src="assets/square-js-brands-solid.svg" alt="JavaScript">
+                    <p class="habilidades__nombre">JavaScript</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icono" src="assets/python-brands-solid.svg" alt="Python">
+                    <p class="habilidades__nombre">Python</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icono" src="assets/react-brands-solid.svg" alt="React">
+                    <p class="habilidades__nombre">React</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icono" src="assets/css3-alt-brands-solid.svg" alt="CSS">
+                    <p class="habilidades__nombre">CSS</p>
+                </li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección sobre mí -->
-    <section class="sobre-mi" id="sobre-mi">
-        <h2 class="sobre-mi__titulo">Sobre mí</h2>
-        <p class="sobre-mi__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.</p>
-        <p class="sobre-mi__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-        <!-- Firma opcional -->
-        <img class="sobre-mi__firma" src="assets/signature.png" alt="Firma">
-    </section>
+        <!-- Sección de Aficiones -->
+        <section class="aficiones" id="aficiones">
+            <h2 class="aficiones__titulo">Aficiones</h2>
+            <ul class="aficiones__lista">
+                <li class="aficiones__elemento">
+                    <img class="aficiones__icono" src="assets/person-hiking-solid.svg" alt="Trekking">
+                    <p class="aficiones__nombre">Trekking</p>
+                </li>
+                <li class="aficiones__elemento">
+                    <img class="aficiones__icono" src="assets/person-swimming-solid.svg" alt="Natación">
+                    <p class="aficiones__nombre">Natación</p>
+                </li>
+                <li class="aficiones__elemento">
+                    <img class="aficiones__icono" src="assets/table-tennis-paddle-ball-solid.svg" alt="Padel">
+                    <p class="aficiones__nombre">Padel</p>
+                </li>
+                <li class="aficiones__elemento">
+                    <img class="aficiones__icono" src="assets/tv-solid.svg" alt="Ver series">
+                    <p class="aficiones__nombre">Ver series</p>
+                </li>
+                <li class="aficiones__elemento">
+                    <img class="aficiones__icono" src="assets/book-solid.svg" alt="Leer Libros">
+                    <p class="aficiones__nombre">Leer Libros</p>
+                </li>
+            </ul>
+        </section>
 
-    <!-- Sección de Habilidades -->
-    <section class="habilidades" id="habilidades">
-        <h2 class="habilidades__titulo">Habilidades</h2>
-        <ul class="habilidades__lista">
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/html.png" alt="HTML">
-                <p class="habilidades__nombre">HTML 5</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/js_icon.png" alt="JavaScript">
-                <p class="habilidades__nombre">JavaScript</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/php_icon.png" alt="PHP">
-                <p class="habilidades__nombre">PHP</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/nodejs_icon.png" alt="Node.js">
-                <p class="habilidades__nombre">Node.js</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/react_icon.png" alt="React">
-                <p class="habilidades__nombre">React</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/css_icon.png" alt="CSS">
-                <p class="habilidades__nombre">CSS</p>
-            </li>
-        </ul>
-    </section>
+        <!-- Sección de Formación académica -->
+        <section class="formacion" id="formacion">
+            <h2 class="formacion__titulo">Formación académica</h2>
+            <ul class="formacion__lista">
+                <li class="formacion__elemento">
+                    <img class="formacion__icono" src="assets/codoACodo.png" alt="UFPR">
+                    <div>
+                        <h3 class="formacion__nombre">Introducción a la Programación</h3>
+                        <p class="formacion__detalle">2023 - Codo a Codo</p>
+                    </div>
+                </li>
+                <li class="formacion__elemento">
+                    <img class="formacion__icono" src="assets/codoACodo.png" alt="UFRJ">
+                    <div>
+                        <h3 class="formacion__nombre">Full Stack Python</h3>
+                        <p class="formacion__detalle">2023 - Codo a Codo</p>
+                    </div>
+                </li>
+                <li class="formacion__elemento">
+                    <img class="formacion__icono" src="assets/alura_logo.png" alt="Alura">
+                    <div>
+                        <h3 class="formacion__nombre">Formación en Frontend</h3>
+                        <p class="formacion__detalle">2024 - Alura</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-    <!-- Sección de Aficiones -->
-    <section class="aficiones" id="aficiones">
-        <h2 class="aficiones__titulo">Aficiones</h2>
-        <ul class="aficiones__lista">
-            <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/skate_icon.png" alt="Patinaje">
-                <p class="aficiones__nombre">Patinaje</p>
-            </li>
-            <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/guitar_icon.png" alt="Tocar bajo">
-                <p class="aficiones__nombre">Tocar bajo</p>
-            </li>
-            <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/headphones_icon.png" alt="Oír música">
-                <p class="aficiones__nombre">Oír música</p>
-            </li>
-            <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/tv_icon.png" alt="Ver series">
-                <p class="aficiones__nombre">Ver series</p>
-            </li>
-            <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/forkspoon_icon.png" alt="Cocinar">
-                <p class="aficiones__nombre">Cocinar</p>
-            </li>
-            <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/camera_icon.png" alt="Tomar fotos">
-                <p class="aficiones__nombre">Tomar fotos</p>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Sección de Formación académica -->
-    <section class="formacion" id="formacion">
-        <h2 class="formacion__titulo">Formación académica</h2>
-        <ul class="formacion__lista">
-            <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/ufpr_logo.png" alt="UFPR">
-                <div>
-                    <h3 class="formacion__nombre">Análisis de datos</h3>
-                    <p class="formacion__detalle">2018 - UFPR</p>
+        <!-- Sección de Proyectos -->
+        <section class="proyectos" id="proyectos">
+            <h2 class="proyectos__titulo">Proyectos</h2>
+            <div class="proyectos__contenedor">
+                <a href="https://juanmanuel-dev.github.io/encriptador-de-texto/"><img class="proyecto__img" src="assets/Captura de pantalla_20241003_142728.png" alt="Proyecto encriptador de texto"></a>
+                <div class="proyecto__texto" id="texto-izquierdo">
+                    <h3 class="proyectos__nombre">Ecriptador de texto</h3>
+                    <p class="proyectos__descripcion">En éste proyecto utilicé JavaScript para la lógica del programa, html para la estructura y css para el diseño. Realizado en el curso de One. </p>
                 </div>
-            </li>
-            <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/alura_logo.png" alt="Alura">
-                <div>
-                    <h3 class="formacion__nombre">Formación en UX Design</h3>
-                    <p class="formacion__detalle">2019 - Alura</p>
+            </div>
+            
+            <div class="proyectos__contenedor">
+                <div class="proyecto__texto">
+                    <h3 class="proyectos__nombre">Ecriptador de texto</h3>
+                    <p class="proyectos__descripcion">En éste proyecto utilicé JavaScript para la lógica del programa, html para la estructura y css para el diseño. Realizado en el curso de One. </p>
                 </div>
-            </li>
-            <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/ufrj_logo.png" alt="UFRJ">
-                <div>
-                    <h3 class="formacion__nombre">Posgrado en diseño</h3>
-                    <p class="formacion__detalle">En curso - UFRJ</p>
-                </div>
-            </li>
+                <a href="https://juanmanuel-dev.github.io/juego__numero__secreto/"><img class="proyecto__img" src="assets/Captura de pantalla_20241004_150501.png" alt="Proyecto encriptador de texto"></a>
+            </div>
+            
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="contacto" id="contacto" aria-labelledby="contacto-titulo">
+            <h2 id="contacto-titulo" class="contacto__titulo">Contacto</h2>
+            <form class="contacto__formulario" action="#" method="POST">
+                <label for="nombre" class="visually-hidden">Nombre</label>
+                <input id="nombre" class="contacto__campo" type="text" placeholder="Nombre" required>
+
+                
+                <label for="email" class="visually-hidden">Correo Electrónico</label>
+                <input id="email" class="contacto__campo" type="email" placeholder="Correo Electrónico" required>
+                
+                <label for="asunto" class="visually-hidden">Asunto</label>
+                <input id="asunto" class="contacto__campo" type="text" placeholder="Asunto" required>
+                
+                <label for="mensaje" class="visually-hidden">Mensaje</label>
+                <textarea id="mensaje" class="contacto__campo contacto__campo--textarea" placeholder="Mensaje" required></textarea>
+                
+                <button class="contacto__boton" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <ul class="redes">
+            <li class="redes__img"><a href="">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
+            <li class="redes__img"><a href="">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
+            <li class="redes__img"><a href="">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
+            <li class="redes__img"><a href="">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
         </ul>
-    </section>
-
-    <!-- Sección de Proyectos -->
-    <section class="proyectos" id="proyectos">
-        <h2 class="proyectos__titulo">Experiencia Profesional</h2>
-        <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
-        </div>
-        <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
-        </div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <section class="contacto" id="contacto">
-        <h2 class="contacto__titulo">Contacto</h2>
-        <form class="contacto__formulario">
-            <input class="contacto__campo" type="text" placeholder="Nombre">
-            <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
-            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
-            <button class="contacto__boton" type="submit">Enviar</button>
-        </form>
-    </section>
+        <p>© 2024 Juan Manuel Impellizziere. Todos los derechos reservados.</p>
+    </footer>
 </body>
     <script src="script.js"></script>
 </html>

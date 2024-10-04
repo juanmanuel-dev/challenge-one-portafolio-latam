@@ -1,7 +1,7 @@
 /* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
 */
 :root {
-    --color-de-fondo: #F5F5F5;
+    --color-de-fondo: #e6e6e6;
     --color-de-fondo-menu: #ffffff;
     --color-de-link: #000000;
 }
@@ -13,9 +13,12 @@ body {
     box-sizing: border-box;
     padding: 0;
     line-height: 1.6;
+    /* Reducido para dar más espacio al contenido */
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
     list-style: none;
 }
 
@@ -29,42 +32,429 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    background-color: var(--color-de-fondo-menu);
+    justify-content: space-around;
+    padding: 0.5rem;
+    margin: 10px;
+    width: 97%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    height: 50px;
 }
 
 .cabecera__logo {
-    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    display: inline-block; /* Asegura que el enlace se ajuste al tamaño de la imagen */
+    width: 150px;
+    height: auto;
+    padding: 10px 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.cabecera__logo img {
+    width: 100%;
+    height: auto;
+}
+
+.cabecera__logo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.cabecera__logo:active {
+    transform: scale(0.95);
+    filter: brightness(0.9);
 }
 
 .cabecera__titulo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 .navegacion__lista {
     display: none;
+    padding: 10px 10px;
+    margin: 10px 10px;
 }
 
-.navegacion__elemento a {
-    font-size: 0.9rem;
+
+button {
+    font-size: 16px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 1em;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
+
+button:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+    transform: translateY(-0.1em);
+}
+
+button:active {
+    box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+    transform: translateY(0em);
+}
+
 /* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image:
+        radial-gradient(circle at calc(50% - 30px) 50%, transparent 0%, transparent 30%, rgba(49, 49, 49, 0.5) 30%),
+        linear-gradient(rgba(49, 49, 49, 0.5), rgba(49, 49, 49, 0.5)),
+        url(assets/fondo-portada.webp);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
 
+.presentacion__contenedor {
+    margin-top: 20rem;
+}
+
+.presentacion__contenedor h2 {
+    font-size: 1.8rem;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.redes a {
+    color: white;
+    transition: color 0.3s ease;
+    /* Añade una transición suave */
+}
+
+.redes a:hover {
+    color: #0066FF;
+    /* El mismo azul usado en la sección de habilidades */
+}
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color-de-fondo);
+    background-image: url(assets/fondo-abajo.svg);
+    background-size: 100%;
+    background-position: center;
+    padding-top: 2rem;
+}
 
+.sobre-mi__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    gap: 2rem;
+}
+
+.sobre-mi__texto-contenedor {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 1rem;
+    width: 250%;
+    max-width: 80%;
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+}
+
+.sobre-mi__titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sobre-mi__texto {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sobre-mi__firma {
+    width: 120px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.sobre-mi__imagen-contenedor {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.sobre-mi__imagen {
+    max-width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+}
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0066FF;
+}
 
+.habilidades__titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.habilidades__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 8rem;
+    gap: 2rem;
+}
+
+.habilidades__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.habilidades__elemento img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.habilidades__elemento:hover img {
+    transform: scale(1.1);
+}
+
+.habilidades__elemento p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+}
 
 /*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(assets/fondo-arriba.svg);
+    background-size: 100%;
+    background-position: center;
+    padding-bottom: 100px;
+}
 
+.aficiones__titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.aficiones__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 8rem;
+}
+
+.aficiones__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.aficiones__elemento img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    filter: brightness(0) saturate(100%) invert(23%) sepia(90%) saturate(1960%) hue-rotate(201deg) brightness(97%) contrast(101%);
+    transition: transform 0.3s ease;
+}
+
+
+/*------------------------------ Formacion Academica --------------------------------*/
+.formacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #EAF2FD;
+}
+
+.formacion__titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.formacion__lista {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.formacion__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 2rem;
+    background-color: #acccfd;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+.formacion__icono {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
 
 /*------------------------------ Sección de Proyectos --------------------------------*/
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 4rem;
+}
 
+.proyecto__texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.proyecto__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+.proyectos__titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.proyectos__contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+#texto-izquierdo{
+    padding-left: 5rem;
+}
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    min-height: 100vh;
+    background-color: #EAF2FD;
+}
+
+.contacto__titulo {
+    font-size: 2rem;
+    text-align: flex-start;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contacto__campo {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*------------------------------ Sección de Footer---------------------------------*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    background-color: #0066FF;
+}
+
+.footer__redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+}
+
 
 
 /* ------------------------------ Responsividad ---------------------------------------*/
@@ -78,11 +468,11 @@ a {
     }
 
     .cabecera__logo {
-        max-width: 100px;
+        max-width: 150px;
     }
 
     .cabecera__titulo {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .navegacion__lista {
@@ -95,16 +485,70 @@ a {
     .navegacion__elemento a {
         font-size: 1rem;
     }
+
+    .sobre-mi__contenedor {
+        flex-direction: row;
+    }
+
+    .formacion__lista {
+        flex-direction: row;
+    }
 }
 
 /* Pantallas grandes */
 @media (min-width: 1024px) {
+
     /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
     .cabecera__titulo {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 
     .navegacion__elemento a {
         font-size: 1.1rem;
     }
+
+    .presentacion__contenedor h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Ajustes para responsividad */
+@media (max-width: 768px) {
+    .formacion__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formacion__elemento {
+        width: 90%;
+        max-width: none;
+    }
+
+    .formacion__icono {
+        max-width: 200px;
+    }
+
+    .sobre-mi__contenedor {
+        flex-direction: column;
+    }
+
+    .sobre-mi__texto-contenedor {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .sobre-mi__imagen-contenedor {
+        width: 100%;
+    }
+}
+
+.navegacion__elemento a:focus,
+.redes a:focus,
+.contacto__campo:focus,
+.contacto__boton:focus {
+    outline: 2px solid #0066FF;
+}
+
+html {
+    scroll-behavior: smooth;
 }
