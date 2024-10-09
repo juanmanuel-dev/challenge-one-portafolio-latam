@@ -90,7 +90,7 @@ a {
 
 
 button {
-    font-size: 16px;
+    font-size: 0.8rem;
     display: inline-block;
     outline: 0;
     border: 0;
@@ -523,9 +523,19 @@ button:active {
 
 /* Movil */
 @media (max-width: 768px) {
+    .cabecera{
+        width: 95%;
+    }
+
+    .redes{
+        margin-right: 1.5rem;
+    }
+
     .formacion__lista {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin-right: 2rem;
     }
 
     .formacion__elemento {
@@ -548,6 +558,14 @@ button:active {
 
     .sobre-mi__imagen-contenedor {
         width: 100%;
+    }
+
+    .proyectos__contenedor{
+        flex-direction: column;
+        margin-right: 1.5rem;
+    }
+    #texto-izquierdo {
+        padding-left: 0rem;
     }
 }
 

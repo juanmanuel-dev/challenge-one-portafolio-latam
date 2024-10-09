@@ -42,12 +42,6 @@ function typeText() {
     setTimeout(typeText, isDeleting ? 100 : 200); // Cambia la velocidad de escritura/borrado
 }
 
-// Cursor parpadeante
-setInterval(() => {
-    cursorVisible = !cursorVisible;
-    textoDinamico.style.borderRight = cursorVisible ? '2px solid white' : 'none';
-}, cursorBlinkInterval);
-
 typeText(); // Inicia el efecto
 
 // Validación del formulario
