@@ -6,6 +6,10 @@
     --color-de-link: #000000;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--color-de-fondo);
     font-family: 'Raleway', sans-serif;
@@ -32,10 +36,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0.5rem;
     margin: 10px;
-    width: 97%;
+    width: 98%;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,6 +51,7 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     height: 50px;
+    padding-top: 15px;
 }
 
 .cabecera__logo {
@@ -119,7 +124,7 @@ button:active {
     justify-content: center;
     min-height: 100vh;
     background-image:
-        radial-gradient(circle at calc(50% - 30px) 50%, transparent 0%, transparent 30%, rgba(49, 49, 49, 0.5) 30%),
+        radial-gradient(circle at calc(50% - 20px) 50%, transparent 0%, transparent 30%, rgba(49, 49, 49, 0.5) 30%),
         linear-gradient(rgba(49, 49, 49, 0.5), rgba(49, 49, 49, 0.5)),
         url(assets/fondo-portada.webp);
     background-size: cover;
@@ -163,9 +168,9 @@ button:active {
     min-height: 100vh;
     background-color: var(--color-de-fondo);
     background-image: url(assets/fondo-abajo.svg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
-    padding-top: 2rem;
+    padding: 1.5rem;
 }
 
 .sobre-mi__contenedor {
@@ -278,7 +283,7 @@ button:active {
     justify-content: center;
     min-height: 100vh;
     background-image: url(assets/fondo-arriba.svg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     padding-bottom: 100px;
 }
@@ -332,6 +337,7 @@ button:active {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
     padding-top: 1rem;
@@ -411,6 +417,7 @@ button:active {
     justify-content:center ;
     min-height: 100vh;
     background-color: #EAF2FD;
+    padding-top: 2rem;
 }
 
 .contacto__titulo {
@@ -429,8 +436,8 @@ button:active {
 
 .contacto__campo {
     width: 100%;
-    padding: 1rem;
-    margin: 1rem 0;
+    padding: 0.8rem;
+    margin: 0.8rem 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -458,6 +465,8 @@ button:active {
 
 
 /* ------------------------------ Responsividad ---------------------------------------*/
+
+
 
 /* Tablets y pantallas más grandes */
 @media (min-width: 768px) {
@@ -512,7 +521,7 @@ button:active {
     }
 }
 
-/* Ajustes para responsividad */
+/* Movil */
 @media (max-width: 768px) {
     .formacion__lista {
         flex-direction: column;
@@ -529,7 +538,7 @@ button:active {
     }
 
     .sobre-mi__contenedor {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .sobre-mi__texto-contenedor {
