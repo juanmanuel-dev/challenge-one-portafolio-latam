@@ -35,10 +35,10 @@
                 <h1 id="presentacion-titulo" class="presentacion__titulo">Hola, mi nombre es Juan Manuel Impellizziere. <br> Soy</h1>
                 <h1 class="texto-dinamico"></h1>
                 <ul class="redes">
-                    <li class="redes__img"><a href="">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
-                    <li class="redes__img"><a href="">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
-                    <li class="redes__img"><a href="">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
-                    <li class="redes__img"><a href="">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
+                    <li class="redes__img"><a href="https://github.com/juanmanuel-dev">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
+            <li class="redes__img"><a href="https://linkedin.com/in/juan-manuel-impellizziere-dev">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
+            <li class="redes__img"><a href="https://www.instagram.com/juanmanuelmda/">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
+            <li class="redes__img"><a href="https://drive.google.com/file/d/180RHqhvq6X3FEUdrhsC3JVUPjVOWUn0Q/view?usp=drive_link">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
                 </ul>
             </div>
         </section>
@@ -165,33 +165,35 @@
         <!-- Sección de Contacto -->
         <section class="contacto" id="contacto" aria-labelledby="contacto-titulo">
             <h2 id="contacto-titulo" class="contacto__titulo">Contacto</h2>
-            <form class="contacto__formulario" action="#" method="POST">
+            <form action="https://formsubmit.co/juanmanuelmda@gmail.com" class="contacto__formulario" method="POST">
                 <label for="nombre" class="visually-hidden">Nombre</label>
-                <input id="nombre" class="contacto__campo" type="text" placeholder="Nombre" required>
-
+                <input name="name" id="nombre" class="contacto__campo" type="text" placeholder="Ej.: Juan" required>
                 
                 <label for="email" class="visually-hidden">Correo Electrónico</label>
-                <input id="email" class="contacto__campo" type="email" placeholder="Correo Electrónico" required>
+                <input name="email" id="email" class="contacto__campo" type="email" placeholder="nombre@email.com" required>
                 
                 <label for="asunto" class="visually-hidden">Asunto</label>
-                <input id="asunto" class="contacto__campo" type="text" placeholder="Asunto" required>
+                <input name="subject" id="asunto" class="contacto__campo" type="text" placeholder="Tema de la consulta" required>
                 
                 <label for="mensaje" class="visually-hidden">Mensaje</label>
-                <textarea id="mensaje" class="contacto__campo contacto__campo--textarea" placeholder="Mensaje" required></textarea>
+                <textarea name="message" id="mensaje" class="contacto__campo contacto__campo--textarea" placeholder="Escríba aquí su mensaje" required></textarea>
                 
-                <button class="contacto__boton" type="submit">Enviar</button>
+                <button onclick="mensajeDeEnvio()" class="contacto__boton" type="submit">Enviar</button>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/challenge-one-portafolio-latam/">
             </form>
         </section>
     </main>
 
     <footer class="footer" role="contentinfo">
         <ul class="redes">
-            <li class="redes__img"><a href="">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
-            <li class="redes__img"><a href="">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
-            <li class="redes__img"><a href="">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
-            <li class="redes__img"><a href="">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
+            <li class="redes__img"><a href="https://github.com/juanmanuel-dev">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
+            <li class="redes__img"><a href="https://linkedin.com/in/juan-manuel-impellizziere-dev">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
+            <li class="redes__img"><a href="https://www.instagram.com/juanmanuelmda/">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
+            <li class="redes__img"><a href="https://drive.google.com/file/d/180RHqhvq6X3FEUdrhsC3JVUPjVOWUn0Q/view?usp=drive_link">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
         </ul>
-        <p>© 2024 Juan Manuel Impellizziere. Todos los derechos reservados.</p>
+        <p class="footer__texto">© 2024 Juan Manuel Impellizziere. One Alura</p>
     </footer>
 </body>
     <script src="script.js"></script>

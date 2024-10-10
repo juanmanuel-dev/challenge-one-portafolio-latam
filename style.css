@@ -567,6 +567,12 @@ button:active {
     #texto-izquierdo {
         padding-left: 0rem;
     }
+    .contacto__formulario{
+        width: 80%;
+    }
+    .footer__texto{
+        text-align: center;
+    }
 }
 
 .navegacion__elemento a:focus,

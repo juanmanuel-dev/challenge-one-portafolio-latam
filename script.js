@@ -44,29 +44,6 @@ function typeText() {
 
 typeText(); // Inicia el efecto
 
-// Validación del formulario
-document.querySelector('.contacto__formulario').addEventListener('submit', function (e) {
-    e.preventDefault(); // Evita el envío del formulario
-
-    const nombre = document.getElementById('nombre').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const asunto = document.getElementById('asunto').value.trim();
-    const mensaje = document.getElementById('mensaje').value.trim();
-
-    // Validar campos
-    if (!nombre || !email || !asunto || !mensaje) {
-        alert('Por favor, completa todos los campos.');
-        return;
-    }
-
-    // Validar formato de correo electrónico
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Por favor, ingresa un correo electrónico válido.');
-        return;
-    }
-
-    // Si todo es válido, puedes enviar el formulario o realizar otra acción
-    alert('Formulario enviado correctamente.');
-    // Aquí puedes agregar el código para enviar el formulario si es necesario
-});
+function mensajeDeEnvio(){
+    window.alert("Mensaje enviado. Muchas Gracias");
+}
