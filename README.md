@@ -1,24 +1,75 @@
-# Challenge ONE | Front End -  Portafolio
+# Portafolio de Juan Manuel Impellizziere 
 
-<p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169097543-d5ada41e-7db8-481d-9d89-cef4efdf7e05.png">
-</p>
+## Descripción
 
+Este es mí portafolio personal, soy Juan Manuel Impellizziere, desarrollador web y programador full-stack. El portafolio está diseñado para mostrar habilidades, proyectos y formación académica, así como para facilitar el contacto con posibles empleadores o colaboradores.
 
-### ¡Bienvenido al proyecto base del Portafolio ! Pasos principales:
----
-#### Marca este proyecto con una estrella ⭐
-#### Sigue las lecciones y las instrucciones de contenido 📚
+## Estructura del Proyecto
 
-### Analisando el repositorio!
----
-### Este repositorio base es una sugerencia inicial, en caso de que aún no tengas un diseño que refleje tu estilo y personalidad. Siéntete libre de modificar tu portafolio como desees, aquí encontrarás:
-#### 🔹index.html: Documento HTML concluído que puedes utilizar en tu proyecto. Las fuentes, los archivos CSS y Javascript ya están referenciados en el documento y todas las secciones contienen comentários que te ayudan a entender la estructura. Si quieres, puedes aventurarte y contruir tu propio HTML.
-#### 🔹style.css: Documento de CSS con instrucciones de estilo y algunas sugerencias de desarrollo.
-#### 🔹script.js: Documento vacío dónde puedes desarrollar tu lógica para validar el formulário, ESTA VALIDACIÓN ES CONSIDERADA UN DESAFÍO EXTRA POR LO QUE NO ES OBLIGATÓRIA SU IMPLEMENTACIÓN.
+El portafolio está compuesto por los siguientes archivos principales:
 
-#### Cuando clones o descargues el proyecto base, tendrás la siguiente presentación:
-<p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169064699-f268715c-822c-4335-b066-97a1bc1ea8e1.png">
-</p>
+- `index.html`: Contiene la estructura HTML del portafolio.
+- `style.css`: Define el estilo y la presentación visual del portafolio.
+- `script.js`: Contiene la lógica de JavaScript para la funcionalidad interactiva.
 
+## Funcionamiento
+
+### Navegación
+
+El menú de navegación permite a los usuarios desplazarse a diferentes secciones del portafolio:
+
+- **Sobre mí**: Información personal y profesional.
+- **Habilidades**: Lista de habilidades técnicas.
+- **Aficiones**: Intereses personales.
+- **Formación académica**: Detalles sobre la educación y cursos completados.
+- **Proyectos**: Muestra de proyectos realizados.
+- **Contacto**: Formulario para enviar mensajes.
+
+### Efecto de Tipeo
+
+En la sección de presentación, se implementa un efecto de tipeo que muestra diferentes roles. Este efecto se logra mediante JavaScript, que alterna entre los textos "Desarrollador Web", "Diseñador Web" y "Desarrollador Front-End".
+
+### Formulario de Contacto
+
+El formulario de contacto permite a los visitantes enviar un mensaje. Al enviar el formulario, se muestra una alerta de confirmación. El formulario está configurado para enviar los datos a través de `formsubmit.co`.
+
+### Responsividad
+
+El diseño es responsivo y se adapta a diferentes tamaños de pantalla, asegurando una buena experiencia de usuario en dispositivos móviles y de escritorio.
+
+## Tecnologías Utilizadas
+
+- **HTML**: Estructura del contenido.
+- **CSS**: Estilo y diseño visual.
+- **JavaScript**: Interactividad y efectos dinámicos.
+- **Google Fonts**: Para la tipografía (Raleway).
+
+## Instalación
+
+Para ver el portafolio en tu propio entorno:
+
+1. Clona el repositorio:
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   ```
+2. Navega a la carpeta del proyecto:
+   ```bash
+   cd <NOMBRE_DE_LA_CARPETA>
+   ```
+3. Abre `index.html` en tu navegador.
+
+## Contribuciones
+
+Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar un pull request.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+## Contacto
+
+Para más información, puedes contactarme a través de mis redes sociales:
+
+- [Github](https://github.com/juanmanuel-dev)
+- [Linkedin](https://linkedin.com/in/juan-manuel-impellizziere-dev)
+- [Instagram](https://www.instagram.com/juanmanuelmda/)
